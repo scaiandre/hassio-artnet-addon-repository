@@ -12,6 +12,9 @@
     "armv7"
   ],
   "boot": "auto",
+  "ports": {
+    "6454/udp": "6454"
+  },
   "options": {
     "hue": {
       "host": "192.168.5.22",
