@@ -18,8 +18,10 @@
     "clientKey": ""
   },
   "schema": {
-    "host": "str",
-    "username": "str",
-    "clientKey": "str"
+    "hue": {
+      "host": "str",
+      "username": "str",
+      "clientKey": "str"
+    }
   }
 }
