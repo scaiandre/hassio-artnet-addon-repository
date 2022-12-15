@@ -5,7 +5,7 @@ EXPOSE 6454/udp
 
 ENV NODE_ENV=production
 
-RUN mkdir -p .config/artnet-hue-entertainment-nodejs  \
+RUN mkdir -p .config/artnet-hue-entertainment-nodejs
 RUN ln -s /data/options.json .config/artnet-hue-entertainment-nodejs/config.json
 RUN git clone https://github.com/scaiandre/artnet-hue-entertainment.git .
 
