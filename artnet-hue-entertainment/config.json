@@ -13,9 +13,11 @@
   ],
   "boot": "auto",
   "options": {
-    "host": "192.168.5.22",
-    "username": "",
-    "clientKey": ""
+    "hue": {
+      "host": "192.168.5.22",
+      "username": "",
+      "clientKey": ""
+    }
   },
   "schema": {
     "hue": {
