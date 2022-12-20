@@ -1,4 +1,4 @@
-FROM node:12 AS base
+FROM node:15 AS base
 WORKDIR /home/node/app
 
 ENV NODE_ENV=production
@@ -10,6 +10,6 @@ WORKDIR /home/node/app/artnet-hue-entertainment
 RUN git checkout integration
 
 RUN ln -s /data/options.json /home/node/app/artnet-hue-entertainment/config.json
-RUN npm install
+RUN yarn install
 
 ENTRYPOINT ["node", "/home/node/app/artnet-hue-entertainment/build/cli.js", "from-config"]
