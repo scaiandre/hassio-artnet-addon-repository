@@ -21,60 +21,60 @@
       "host": "192.168.5.22",
       "username": "",
       "clientKey": "",
-      "entertainmentRoomId": 5,
-      "lights": [
-        {
-          "dmxStart": 95,
-          "lightId": "11",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 99,
-          "lightId": "15",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 103,
-          "lightId": "18",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 107,
-          "lightId": "6",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 111,
-          "lightId": "7",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 115,
-          "lightId": "12",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 119,
-          "lightId": "13",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 123,
-          "lightId": "17",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 127,
-          "lightId": "20",
-          "channelMode": "8bit-dimmable"
-        },
-        {
-          "dmxStart": 131,
-          "lightId": "5",
-          "channelMode": "8bit-dimmable"
-        }
-      ]
-    }
+      "entertainmentRoomId": 5
+    },
+    "lights": [
+      {
+        "dmxStart": 95,
+        "lightId": "11",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 99,
+        "lightId": "15",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 103,
+        "lightId": "18",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 107,
+        "lightId": "6",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 111,
+        "lightId": "7",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 115,
+        "lightId": "12",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 119,
+        "lightId": "13",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 123,
+        "lightId": "17",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 127,
+        "lightId": "20",
+        "channelMode": "8bit-dimmable"
+      },
+      {
+        "dmxStart": 131,
+        "lightId": "5",
+        "channelMode": "8bit-dimmable"
+      }
+    ]
   },
   "schema": {
     "run-mode": "str",
@@ -82,12 +82,12 @@
       "host": "str",
       "username": "str",
       "clientKey": "str",
-      "entertainmentRoomId": "int",
-      "lights": [{
-        "dmxStart": "int",
-        "lightId": "str",
-        "channelMode": "str"
-      }]
-    }
+      "entertainmentRoomId": "int"
+    },
+    "lights": [{
+      "dmxStart": "int",
+      "lightId": "str",
+      "channelMode": "str"
+    }]
   }
 }
