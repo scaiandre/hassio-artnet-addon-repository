@@ -7,7 +7,7 @@ RUN git clone https://github.com/scaiandre/artnet-hue-entertainment.git
 
 WORKDIR /home/node/app/artnet-hue-entertainment
 
-RUN git checkout integration
+RUN git checkout feature/homeassistant
 
 RUN ln -s /data/options.json /home/node/app/artnet-hue-entertainment/config.json
 RUN yarn install
