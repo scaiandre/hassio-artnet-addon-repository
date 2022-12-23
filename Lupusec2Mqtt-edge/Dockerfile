@@ -1,15 +1,23 @@
-FROM node:15 AS base
-WORKDIR /home/node/app
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim AS base
+WORKDIR /app
 
-ENV NODE_ENV=production
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+RUN apt-get update
+RUN apt-get install -y git
 
-RUN git clone https://github.com/scaiandre/artnet-hue-entertainment.git
+WORKDIR "/src"
+RUN git clone -b "feature/integration"" --single-branch https://github.com/scaiandre/Lupusec2Mqtt/
+WORKDIR "/src/Lupusec2Mqtt/src"
+RUN ls
+RUN dotnet restore "Lupusec2Mqtt/Lupusec2Mqtt.csproj"
+COPY . .
+WORKDIR "/src/Lupusec2Mqtt/src/Lupusec2Mqtt"
+RUN dotnet build "Lupusec2Mqtt.csproj" -c Release -o /app/build
 
-WORKDIR /home/node/app/artnet-hue-entertainment
+FROM build AS publish
+RUN dotnet publish "Lupusec2Mqtt.csproj" -c Release -o /app/publish --no-restore
 
-RUN git checkout "feature/homeassistant_squash"
-
-RUN ln -s /data/options.json /home/node/app/artnet-hue-entertainment/config.json
-RUN yarn install
-
-ENTRYPOINT ["node", "/home/node/app/artnet-hue-entertainment/build/cli.js", "from-config"]
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Lupusec2Mqtt.dll"]
