@@ -1,4 +1,4 @@
-FROM node:16 AS base
+FROM node:18 AS base
 WORKDIR /home/node/app
 
 ENV NODE_ENV=production
