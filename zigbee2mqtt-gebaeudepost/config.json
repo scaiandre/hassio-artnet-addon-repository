@@ -3,7 +3,7 @@
   "version": "2.12.1-1",
   "slug": "zigbee2mqtt_gebaeudepost",
   "description": "Zusätzliche Zigbee2MQTT-Instanz für einen netzwerkgebundenen SLZB-06p7-Koordinator (Gebäude Post – ehemaliges Restaurant „Zur Post\", benannt nach der früheren Post-Station)",
-  "url": "https://github.com/scaiandre/hassio-artnet-addon-repository/tree/master/zigbee2mqtt-gebaeudepost",
+  "url": "https://github.com/scaiandre/hassio-artnet-addon-repository/tree/main/zigbee2mqtt-gebaeudepost",
   "startup": "application",
   "services": [
     "mqtt:need"

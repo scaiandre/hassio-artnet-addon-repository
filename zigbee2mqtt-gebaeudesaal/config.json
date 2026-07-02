@@ -3,7 +3,7 @@
   "version": "2.12.1-1",
   "slug": "zigbee2mqtt_gebaeudesaal",
   "description": "Zusätzliche Zigbee2MQTT-Instanz für einen netzwerkgebundenen SLZB-06p7-Koordinator (Gebäude Saal – ehemaliger Festsaal)",
-  "url": "https://github.com/scaiandre/hassio-artnet-addon-repository/tree/master/zigbee2mqtt-gebaeudesaal",
+  "url": "https://github.com/scaiandre/hassio-artnet-addon-repository/tree/main/zigbee2mqtt-gebaeudesaal",
   "startup": "application",
   "services": [
     "mqtt:need"
