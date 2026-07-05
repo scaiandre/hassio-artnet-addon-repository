@@ -23,7 +23,7 @@ mqtt:
   user: mqtt_z2m
   password: DEIN_PASSWORT
 serial:
-  port: tcp://192.0.2.21:6638              # feste IP des SLZB-06p7
+  port: tcp://192.168.6.36:6638            # feste IP des SLZB-06p7
   adapter: zstack                          # CC2652P7 = TI-Chip
 ```
 
